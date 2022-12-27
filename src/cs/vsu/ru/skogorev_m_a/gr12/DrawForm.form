@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="cs.vsu.ru.skogorev_m_a.gr12.DrawForm">
+  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="974" height="724"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="2080" binding="panelMain" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <maximumSize width="900" height="710"/>
+          <visible value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="65a41" binding="panelDraw" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="West"/>
+            <properties>
+              <maximumSize width="700" height="700"/>
+              <minimumSize width="700" height="700"/>
+              <opaque value="true"/>
+              <preferredSize width="700" height="700"/>
+            </properties>
+            <border type="bevel-lowered"/>
+            <children/>
+          </grid>
+          <grid id="9795d" binding="panelButton" layout-manager="GridLayoutManager" row-count="6" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="5" left="5" bottom="5" right="5"/>
+            <constraints border-constraint="Center"/>
+            <properties>
+              <maximumSize width="250" height="700"/>
+              <minimumSize width="250" height="700"/>
+              <preferredSize width="250" height="700"/>
+              <visible value="true"/>
+            </properties>
+            <border type="bevel-raised"/>
+            <children>
+              <grid id="74f0d" binding="panelMoving" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="5" bottom="5" right="5"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                    <preferred-size width="200" height="150"/>
+                    <maximum-size width="200" height="150"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="true"/>
+                  <visible value="true"/>
+                </properties>
+                <border type="etched" title="Перемещение"/>
+                <children>
+                  <component id="85ec2" class="javax.swing.JSpinner" binding="spinnerMovX">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="30"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="85049" class="javax.swing.JSpinner" binding="spinnerMovY">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="30"/>
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="b81b3" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="по Х"/>
+                    </properties>
+                  </component>
+                  <component id="f2a25" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="по Y"/>
+                    </properties>
+                  </component>
+                  <component id="b716c" class="javax.swing.JButton" binding="buttonMoving">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Выполнить"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="2c509" binding="panelCompression" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="5" bottom="5" right="5"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                    <minimum-size width="-1" height="150"/>
+                    <preferred-size width="200" height="150"/>
+                    <maximum-size width="200" height="150"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="true"/>
+                  <visible value="true"/>
+                </properties>
+                <border type="etched" title="Сжатие/Растяжение"/>
+                <children>
+                  <component id="3fddc" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="по Х"/>
+                    </properties>
+                  </component>
+                  <component id="5514b" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="по Y"/>
+                    </properties>
+                  </component>
+                  <component id="cf9ad" class="javax.swing.JButton" binding="buttonCompression">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Выполнить"/>
+                    </properties>
+                  </component>
+                  <component id="d7af9" class="javax.swing.JTextField" binding="textFieldCompX">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="30"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="f5101" class="javax.swing.JTextField" binding="textFieldCompY">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="30"/>
+                        <maximum-size width="100" height="30"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                </children>
+              </grid>
+              <grid id="ada7d" binding="panelRotate" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="5" bottom="5" right="5"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                    <preferred-size width="200" height="200"/>
+                    <maximum-size width="200" height="200"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="true"/>
+                  <visible value="true"/>
+                </properties>
+                <border type="etched" title="Вращение"/>
+                <children>
+                  <component id="6a6c" class="javax.swing.JButton" binding="buttonRotate">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Выполнить"/>
+                    </properties>
+                  </component>
+                  <component id="ae801" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="градусов"/>
+                    </properties>
+                  </component>
+                  <component id="fea61" class="javax.swing.JSpinner" binding="spinnerRotate">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <maximum-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                </children>
+              </grid>
+              <grid id="31a2f" binding="panelScaling" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="5" bottom="5" right="5"/>
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                    <preferred-size width="200" height="150"/>
+                    <maximum-size width="200" height="150"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="Масштабирование"/>
+                </properties>
+                <border type="etched" title="Масштабирование"/>
+                <children>
+                  <component id="f5a47" class="javax.swing.JSlider" binding="sliderScaling">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="30"/>
+                        <maximum-size width="150" height="30"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <maximum value="70"/>
+                      <name value="Масштабирование"/>
+                    </properties>
+                  </component>
+                  <component id="786bc" class="javax.swing.JButton" binding="buttonScaling">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Выполнить"/>
+                    </properties>
+                  </component>
+                  <component id="913d5" class="javax.swing.JLabel" binding="labelScaling">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="1"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <component id="f4b54" class="javax.swing.JButton" binding="buttonDo">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <label value="Преобразовать"/>
+                  <text value="Преобразовать"/>
+                </properties>
+              </component>
+              <component id="44ca4" class="javax.swing.JButton" binding="buttonClear">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <label value="Восстановить"/>
+                  <text value="Восстановить"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <hspacer id="19b00">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="29f7f">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>
